@@ -1,7 +1,9 @@
 <?php
 
 use App\Http\Controllers\BeritaController;
+use App\Http\Controllers\DosensController;
 use App\Http\Controllers\GuruController;
+use App\Models\Dosens;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -26,3 +28,12 @@ Route::get('/berita/create', [BeritaController::class, 'create']
 Route::get('/guru', [GuruController::class, 'index']
 );
 //Route::get('/berita/create', [BeritaController::class, 'create'] di gunakan untuk
+
+Route::get('/dosen', [DosensController::class, 'index']
+);
+
+Route::get('/dosen/create',[DosensController::class, 'create']
+);
+
+Route::get('dosen/login',[DosensController::class, 'login']
+);

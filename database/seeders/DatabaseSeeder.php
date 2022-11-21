@@ -5,6 +5,7 @@ namespace Database\Seeders;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 use App\Models\Berita;
+use App\Models\Dosens;
 use App\Models\Guru;
 use App\Models\Kelas;
 use App\Models\Mahasiswa;
@@ -28,7 +29,8 @@ class DatabaseSeeder extends Seeder
         // Staf::factory(20)->create();
         // Kelas::factory(40)->create();
         // Berita::factory(20)->create();
-        Guru::factory(10)->create();
+        // Guru::factory(10)->create();
+        Dosens::factory(20)->create();
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
